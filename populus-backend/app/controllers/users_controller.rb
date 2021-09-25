@@ -5,8 +5,20 @@ class UsersController < ApplicationController
             if new_user.save()
                 render json: {status: 200, username: new_user.username}
             end
+        else
+            render json: {status: 401}
         end
-        render json: {status: 401}
+    end
+
+    def login
+        if user_params
+            user = User.find_by(username: user_params[:username])
+            if (user.password == user_params[:password])
+                render json: {status: 200, username: user.username}
+            end
+        else
+            render json: {status: 401}
+        end
     end
 
     def user_params
