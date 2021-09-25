@@ -1,0 +1,107 @@
+populus-backend/*.rbc
+populus-backend/capybara-*.html
+populus-backend/.rspec
+populus-backend/db/*.sqlite3
+populus-backend/db/*.sqlite3-journal
+populus-backend/db/*.sqlite3-[0-9]*
+populus-backend/public/system
+populus-backend/coverage/
+populus-backend/spec/tmp
+populus-backend/*.orig
+populus-backend/rerun.txt
+populus-backend/pickle-email-*.html
+
+# Ignore all logfiles and tempfiles.
+populus-backend/log/*
+populus-backend/tmp/*
+populus-backend/!/log/.keep
+populus-backend/!/tmp/.keep
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+populus-backend/config/initializers/secret_token.rb
+populus-backend/config/master.key
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+# dotenv, dotenv-rails
+# TODO Comment out these rules if environment variables can be committed
+populus-backend/.env
+populus-backend/.env.*
+
+## Environment normalization:
+populus-backend/.bundle
+populus-backend/vendor/bundle
+
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+populus-backend/.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+populus-backend/vendor/assets/bower_components
+populus-backend/*.bowerrc
+populus-backend/bower.json
+
+# Ignore pow environment settings
+populus-backend/.powenv
+
+# Ignore Byebug command history file.
+populus-backend/.byebug_history
+
+# Ignore node_modules
+populus-backend/node_modules/
+
+# Ignore precompiled javascript packs
+populus-backend/public/packs
+populus-backend/public/packs-test
+populus-backend/public/assets
+
+# Ignore yarn files
+populus-backend/yarn-error.log
+populus-backend/yarn-debug.log*
+populus-backend/.yarn-integrity
+
+# Ignore uploaded files in development
+populus-backend/storage/*
+populus-backend/!/storage/.keep
+populus-backend/public/uploads
+
+
+populus-frontend/.DS_STORE
+populus-frontend/scripts/flow/*/.flowconfig
+populus-frontend/.flowconfig
+populus-frontend/*~
+populus-frontend/*.pyc
+populus-frontend/.grunt
+populus-frontend/_SpecRunner.html
+populus-frontend/__benchmarks__
+populus-frontend/build/
+populus-frontend/remote-repo/
+populus-frontend/coverage/
+populus-frontend/.module-cache
+populus-frontend/fixtures/dom/public/react-dom.js
+populus-frontend/fixtures/dom/public/react.js
+populus-frontend/test/the-files-to-test.generated.js
+populus-frontend/*.log*
+populus-frontend/chrome-user-data
+populus-frontend/*.sublime-project
+populus-frontend/*.sublime-workspace
+populus-frontend/.idea
+populus-frontend/*.iml
+populus-frontend/.vscode
+populus-frontend/*.swp
+populus-frontend/*.swo
+populus-frontend/packages/react-devtools-core/dist
+populus-frontend/packages/react-devtools-extensions/chrome/build
+populus-frontend/packages/react-devtools-extensions/chrome/*.crx
+populus-frontend/packages/react-devtools-extensions/chrome/*.pem
+populus-frontend/packages/react-devtools-extensions/firefox/build
+populus-frontend/packages/react-devtools-extensions/firefox/*.xpi
+populus-frontend/packages/react-devtools-extensions/firefox/*.pem
+populus-frontend/packages/react-devtools-extensions/shared/build
+populus-frontend/packages/react-devtools-extensions/.tempUserDataDir
+populus-frontend/packages/react-devtools-inline/dist
+populus-frontend/packages/react-devtools-shell/dist
+populus-frontend/packages/react-devtools-scheduling-profiler/dist
