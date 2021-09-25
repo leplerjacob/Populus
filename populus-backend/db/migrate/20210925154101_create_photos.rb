@@ -5,6 +5,8 @@ class CreatePhotos < ActiveRecord::Migration[6.1]
       t.text :description
       t.string :tags
       t.string :filename
+      t.boolean :is_private
+
       t.references :user
 
       t.timestamps
