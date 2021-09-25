@@ -4,7 +4,8 @@ class CreatePhotos < ActiveRecord::Migration[6.1]
       t.string :location
       t.text :description
       t.string :tags
-      t.belongs_to :like
+      t.string :filename
+      t.references :user
 
       t.timestamps
     end

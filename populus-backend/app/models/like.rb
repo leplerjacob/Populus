@@ -1,4 +1,4 @@
 class Like < ApplicationRecord
-    has_one :user
-    has_one :photo
+    belongs_to :user
+    belongs_to :photo
 end
