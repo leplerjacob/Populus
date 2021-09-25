@@ -1,2 +1,2 @@
 # Populus
-A public photo repository
+A photo sharing app
