@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_25_154311) do
+ActiveRecord::Schema.define(version: 2021_09_25_160734) do
 
   create_table "likes", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_09_25_154311) do
     t.integer "like_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "filename"
     t.index ["like_id"], name: "index_photos_on_like_id"
   end
 
