@@ -1,10 +1,15 @@
 require 'rails_helper'
 
 describe 'Authentication', type: :request do
-    describe :api do
-        namespace :v1 do
+    describe 'POST /authenticate' do
+        it 'authenticates the client' do
             
-            post 'authenticate', to: 'authentication#create'
+            post '/api/v1/authenticate', params: {username: "jlepler", password: "password"}
+
+            expect(response).to have_http_status(:created)
+            expect(response.body).to eq({
+                'token' => '123'
+            })
         end
     end
 end
